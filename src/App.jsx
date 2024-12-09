@@ -60,11 +60,10 @@ function App() {
       <ul>
         {tasks.map((task, index)=>{
           return(
-            <li key = {index}>{task.task} <button>Edit</button><button onClick = {()=>deleteTask("674dcb1a491aa6dd0dd6d96b")}>Delete</button></li>
+            <li key = {index}>{task.task} - {task._id} <button>Edit</button><button onClick = {()=>deleteTask(task.task)}>Delete</button></li>
           )
         })}
       </ul>
-      <button onClick = {()=>deleteTask(10)}>to get error</button>
     </>
   )
 }
