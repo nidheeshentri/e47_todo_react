@@ -32,7 +32,7 @@ function Login() {
     }
   return (
     <div>
-        <h1>Login</h1>
+        <h1>Login Page</h1>
         <form onSubmit = {registerUser}>
             <input type = "email" placeholder='Email ID' name = "email" onChange = {changeHandler} value = {data.email}/><br /><br />
             <input type = "password" placeholder='Password' name = "password" onChange = {changeHandler} value = {data.password}/><br /><br />
